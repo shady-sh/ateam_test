@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.font-bold {
+  font-weight: bold;
+}
+.right-pos {
+  span {
+    display: inline-block;
+    margin: 0 20px;
+  }
+}
+.sidebar {
+  .logo {
+    padding-left: 20px !important;
+  }
+  .sidebar-items {
+    padding-left: 32px !important;
+    .css-10hburv-MuiTypography-root {
+      font-weight: 800;
+    }
+    > div {
+      padding: 0 !important;
+      margin: 0 !important;
+      margin-top: 37.5px !important;
+    }
+  }
+}
+
+.main {
+  .title {
+    margin-top: 40px;
+    > h2 {
+      font-size: 23px;
+      font-weight: bold;
+    }
+  }
+  .select-dropdown {
+    margin-top: 32px;
+    .dropdown {
+      display: inline-block;
+      margin-right: 8px;
+    }
+    button {
+      color: black;
+      &:hover {
+        color: black;
+        background-color: white;
+        border-color: skyblue;
+      }
+      box-shadow: none !important;
+    }
+    .dropdown-item {
+      color: black !important;
+      background-color: white !important;
+      > div {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+    .fill-color > button {
+      background-color: #1565c0;
+      color: white;
+    }
+    .filter-reset {
+      margin-left: 16px;
+      cursor: pointer;
+      img {
+        margin-right: 8px;
+      }
+      > span {
+        color: #0d6efd;
+      }
+    }
+  }
+  .item-list {
+    margin-top: 32px;
+    .item-card {
+      padding: 24px 16px;
+      border: 1px solid #e5e5e5;
+      font-size: 14px;
+      .item-card-title {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .item-customer {
+        font-weight: 500;
+        line-height: 20px;
+      }
+      .item-date {
+        margin-top: 24px;
+        color: #939fa5;
+      }
+      .item-description {
+        display: flex;
+        > span:nth-child(1) {
+          flex-basis: 27%;
+        }
+        > span:nth-child(2) {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-only {
+    display: none !important;
+  }
+  .consult {
+    float: right;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pc-only {
+    display: none !important;
+  }
+  .consult {
+    margin-top: 20px;
+    display: block;
+  }
+}
